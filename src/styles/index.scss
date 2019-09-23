@@ -1,23 +1,158 @@
 @import './reset.css';
-
-main{
-    height:100%;
-    padding:100px;
+*{
+    font-family: 'Roboto', 'Noto Sans KR' !important;
 }
-h1{
-    width:100%;
-    font-size:30px;
-    margin-bottom:20px;
+.wrap{
+   background-color: antiquewhite;
+   width: 1200px;
+   min-width: 375px;
+   padding: 40px;
 }
-p{
-    width:100%;
-    font-size:20px;
-    margin-bottom:10px;
+.feed-wrap{
+   background-color: white;
+   width: 375px;
+   /* height: 514px; */
+   margin: 0 auto;
 }
-img{
-    width:100px;
+.feed__header{
+   width: 100%;
+   height: 45px;
+   padding: 11px 29px 5px 15px;
+   position: relative;
 }
-
-.test{
-    padding:100px;
+.feed__header:after{
+   clear: both;
+   display: block;
+   content: "";
+}
+.profile-img{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background-image: url("https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/video/caring_for_your_kitten_video/650x350_caring_for_your_kitten_video.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   float: left;
+   margin-right: 10px;
+}
+.user-nickname{
+   font-weight: bold;
+   font-size: 14px;
+   float: left;
+   line-height: 30px;
+}
+.menu-icon{
+   width: 3px;
+   height: 15px;
+   background-color: red;
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV6RvOQ-tKBlO5GJHCOjZIqfgtOIUronQ7yCp37f04K3hvY6H7almesGc");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: absolute;
+   right: 29px;
+   top: 50%;
+   margin-top: -7.5px;
+}
+.feed__img-wrap{
+   background-color: azure;
+   height: 287.5px;
+   background-image: url("https://ewscripps.brightspotcdn.com/dims4/default/307e03c/2147483647/strip/true/crop/640x360+0+34/resize/1280x720!/quality/90/?url=https%3A%2F%2Fmediaassets.tmj4.com%2Fphoto%2F2017%2F05%2F10%2FRed_Kittens7_1494442679556_59393162_ver1.0_640_480.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.feed__content-wrap{
+   padding: 20px;
+}
+.feed__btn-wrap{
+   height: 20px;
+   margin-bottom: 21px;
+}
+.feed__btn-wrap:after{
+   clear: both;
+   display: block;
+   content: "";
+}
+.btn-wrap{
+   height: 100%;
+   cursor: pointer;
+}
+.btn-wrap:after{
+   clear: both;
+   display: block;
+   content: "";
+}
+.btn-wrap.left{
+   float: left;
+}
+.btn-wrap.right{
+   float: right;
+}
+.btn-item{
+   float: left;
+   margin-right: 11px;
+}
+.btn-item:last-child{
+   margin-right: 0;
+}
+.btn-img{
+   width: 22px;
+   height: 20px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   float: left;
+   margin-right: 6px;
+   cursor: pointer;
+}
+.btn-img.no-count{
+   margin-right: 0;
+}
+.btn-count{
+   font-size: 14px;
+   font-weight: bold;
+   float: left;
+   line-height: 20px;
+   /* margin-right: 11px; */
+}
+.btn-img.like{   
+   background-image: url("https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png");   
+}
+.btn-img.comment{
+   background-image: url("https://image.shutterstock.com/image-vector/chat-icon-vector-trendy-flat-260nw-742217956.jpg");
+}
+.btn-img.bookmark{
+   background-image: url("https://png.pngtree.com/png-vector/20190423/ourlarge/pngtree-bookmark-icon-vector-illustration-in-line-style-for-any-purpose-png-image_975631.jpg");
+}
+.btn-img.share{
+   background-image: url("https://cdn0.iconfinder.com/data/icons/harmonicons-07/64/share-512.png");
+   width: 18px;
+   height: 16px;
+}
+.btn-img.link{
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3T_M8rT-Qqwzql7XkfLVcvhmwcfJbrOyXQ3l_C1xhiRP9qCh");
+   width: 24px;
+   height: 22px;
+   margin-top: -2px;
+}
+.feed__content{
+   font-size: 14px;
+   letter-spacing: -1px;
+   color: #666;
+   font-weight: bold;
+   margin-bottom: 12px;
+}
+.hash-tag{
+   color: #ff4882;
+   cursor: pointer;
+}
+.user-tag{
+   color: #808080;
+   cursor: pointer;
+}
+.feed__content--date{
+   font-size: 12px;
+   color: #b2b2b2;
 }
